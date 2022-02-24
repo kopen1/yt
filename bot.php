@@ -52,6 +52,9 @@ if($text == "/start"){
 if(strpos($text,"youtu.be") != null | strpos($text,"youtube.com") != null){
 
   $link = $text;
+   if(file_exists("save.html")){
+       unlink("save.html");
+       }
   include("file.php");
   $msg = file_get_contents("save.html");
 }else{
