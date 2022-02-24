@@ -1,0 +1,6 @@
+<?php 
+
+echo "Halaman Awal ";
+
+
+?>
