@@ -49,9 +49,15 @@ if($text == "/start"){
   $msg = " Selamat Datang $nama \n";
 
 }else{
+if(strpos($text,"youtu.be") != null | strpos($text,"youtube.com") != null){
 
-  $msg = $text;
-
+  $link = $text;
+  include("file.php");
+  $msg = file_get_contents("save.html");
+}else{
+    // bila tidak url YouTube kita bisa kasih message
+    $msg = "maaf url tidak Valid";
+}
 }
 
 get($id,$msg);
