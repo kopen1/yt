@@ -64,7 +64,7 @@ $time = $res["timeExpires"];
 
 $mp4 = $res["links"]["mp4"];
 
-$img = "<a href='https://i.ytimg.com/vi/$vid/maxresdefault.jpg' > </a> 
+$img = "<a href='https://img.youtube.com/vi/$vid/hqdefault.jpg' > </a> 
 
 ";
 
