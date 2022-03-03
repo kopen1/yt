@@ -38,11 +38,11 @@ echo "$dl | ";
   </head>
   <body>
     
-    <?php if($msg==true){echo "URL INVALID <br>";} ?>
     <form action="" method="post" >
       <input type="url" name="url" value="" />
       <input type="submit" name="go" value=" Download " />
     </form>
+    
   <?php
 if(isset($_POST["go"])){
 $link = $_POST["url"];
@@ -55,7 +55,7 @@ ul($url);
 donl($link);
 }
 }else{
-$msg = 1; 
+echo "URL INVALID <br>";
 }}
 ?>
     
