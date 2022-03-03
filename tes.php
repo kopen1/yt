@@ -8,7 +8,7 @@ $url = "https://api.youtubemultidownloader.com/playlist?url=$link&nextPageToken=
 $x = json_decode(file_get_contents($url),1);
 print_r($x);
 }else{
-  $msg = true;$text = " URL INVALID ";
+  $msg = 1; 
 }}
 ?>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ print_r($x);
   </head>
   <body>
     
-    <?php if($msg==true){echo $txt;} ?>
+    <?php if($msg==true){echo "\e[1;31m URL INVALID <br>";} ?>
     <form action="" method="post" >
       <input type="url" name="url" value="" />
       <input type="submit" name="go" value=" Download " />
