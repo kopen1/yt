@@ -50,7 +50,7 @@ if($m == 1){
 $link = $_POST["url"];
 $l = array("youtube.com","youtu.be","playlist");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
-if(strpos($link,$l[2]) != null)){
+if(strpos($link,$l[2]) != null){
 $url = "playlist?url=$link&nextPageToken=";
 ul($url);
 }else{
