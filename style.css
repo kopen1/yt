@@ -1,0 +1,23 @@
+body {
+  background: #b4b4b4;
+  font-family: Times New Roman;
+}
+
+.con {
+  align-content: center;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.box {
+  padding: 10px 5px;
+  background: cyan;
+  border : 3px solid red;
+  border-radius: 20px;
+}
+
+
+form input {
+  border : 1px solid red;
+  border-radius: 20px;
+}
