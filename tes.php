@@ -19,8 +19,8 @@ print_r($x);
   </head>
   <body>
     
-    <form action="" method="post" accept-charset="utf-8">
-      <input type="text" name="url" value="" />
+    <form action="" method="post" >
+      <input type="url" name="url" value="" />
       <input type="button" name="go" id="go" value=" Download " />
       
     </form>
