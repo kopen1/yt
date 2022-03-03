@@ -21,7 +21,7 @@ print_r($x);
   <body>
     
     <?php if($msg==true){echo $txt;} ?>
-    <form action="dl.php" method="post" >
+    <form action="" method="post" >
       <input type="url" name="url" value="" />
       <input type="submit" name="go" value=" Download " />
       
