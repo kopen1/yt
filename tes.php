@@ -27,19 +27,7 @@ $dl = "<a href='$urldl' > $format </a>";
 echo "$dl | ";
 }}
 
-if(isset($_POST["go"])){
-$link = $_POST["url"];
-$l = array("youtube.com","youtu.be","playlist");
-if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
-if(strpos($link,$l[2] != null)){
-$url = "playlist?url=$link&nextPageToken=";
-ul($url);
-}else{
-donl($link);
-}
-}else{
-  $msg = 1; 
-}}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,13 +38,26 @@ donl($link);
   </head>
   <body>
     
-    <?php if($msg==true){echo "\e[1;31m URL INVALID <br>";} ?>
+    <?php if($msg==true){echo "URL INVALID <br>";} ?>
     <form action="" method="post" >
       <input type="url" name="url" value="" />
       <input type="submit" name="go" value=" Download " />
-      
     </form>
-    
+  <?php
+if(isset($_POST["go"])){
+$link = $_POST["url"];
+$l = array("youtube.com","youtu.be","playlist");
+if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
+if(strpos($link,$l[2]) != null)){
+$url = "playlist?url=$link&nextPageToken=";
+ul($url);
+}else{
+donl($link);
+}
+}else{
+$msg = 1; 
+}}
+?>
     
   </body>
 </html>
