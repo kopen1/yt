@@ -24,6 +24,7 @@ $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
 $dl = "<a href='$urldl' > {$format}P </a>";
 echo "$dl | ";
+if($format == 144){ break; }
 }}
 if(isset($_POST["go"])){
   $m = 1;
