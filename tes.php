@@ -3,15 +3,12 @@
 function ul($pat){
 $home = "https://api.youtubemultidownloader.com/$pat";
 $x = json_decode(file_get_contents($home),1);
-$x = $x["items"];$no=1;
+$x = $x["items"];
 foreach ($x as $i){
 $link = $i["url"];
 donl($link);
-$no++;
 }}
 function donl($pat){
-  global $no;
-if($no == null){ $no = 1;}
 $pot = "https://api.youtubemultidownloader.com/video?url=$pat";
 $i = json_decode(file_get_contents($pot),1);
 $thum = $i["thumbnails"];
@@ -19,7 +16,7 @@ $idx = str_replace("default","hqdefault",$thum);
 $img = "<center><img src='$idx' /> </center>";
 $title = $i["title"];
 echo "<br><p>$img <br>
-[$no] $title <br>";
+$title <br>";
 $x = $i["format"];
 foreach($x as $i){
 $format = $i["height"];
