@@ -19,7 +19,7 @@ print_r($x);
   </head>
   <body>
     
-    <form action="" method="post" >
+    <form action="tes.php" method="post" >
       <input type="url" name="url" value="" />
       <input type="button" name="go" id="go" value=" Download " />
       
