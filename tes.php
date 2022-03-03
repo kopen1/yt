@@ -6,12 +6,13 @@ $x = json_decode(file_get_contents($home),1);
 $x = $x["items"];$no=1;
 foreach ($x as $i){
 $idx = $i["id"];
-$img = "<img src='https://i.ytimg.com/vi/$idx/hqdefault.jpg' /> ";
+$img = "<center><img src='https://i.ytimg.com/vi/$idx/hqdefault.jpg' /> </center>";
 $title = $i["title"];
 $link = $i["url"];
-$url = donl($link);
 echo "<p>$img <br>
-$no | $title <br> $url <br> </p>";
+[$no] $title <br>";
+donl($link);
+echo "<br>";
 $no++;
 }}
 
@@ -22,10 +23,9 @@ $x = $x["format"];
 foreach($x as $i){
 $format = $i["height"];
 $urldl = $i["url"];
-if($urldl == null) $urldl = $i["manifestUrl"];;
-$dl = "<a href='$urldl' > Download </a>";
-echo "
-$format | $dl <br> ";
+if($urldl == null){ $urldl = $i["manifestUrl"]; }
+$dl = "<a href='$urldl' > $format </a>";
+echo "$dl | ";
 }}
 
 if(isset($_POST["go"])){
