@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST["go"])){
-$link = $_POST["url"];
+echo $link = $_POST["url"];
 
 $url = "https://api.youtubemultidownloader.com/playlist?url=$link&nextPageToken=";
 
