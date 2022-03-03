@@ -1,12 +1,14 @@
 <?php
 
-function ul($item,$id,$jdl,$url){
-$x = $x[$item];$no=1;
+function ul($pat){
+$home = "https://api.youtubemultidownloader.com/$pat";
+$x = json_decode(file_get_contents($home),1);
+$x = $x["items"];$no=1;
 foreach ($x as $i){
-$idx = $i[$id];
+$idx = $i["id"];
 $img = "<img src='https://i.ytimg.com/vi/$idx/hqdefault.jpg' /> ";
-$title = $i[$jdl];
-$link = $i[$url];
+$title = $i["title"];
+$link = $i["url"];
 echo "<p>$img <br>
 $no | $title <br> $url <br> </p>";
 $no++;
@@ -16,10 +18,8 @@ if(isset($_POST["go"])){
 $link = $_POST["url"];
 $l = array("youtube.com","youtu.be");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
-$url = "https://api.youtubemultidownloader.com/playlist?url=$link&nextPageToken=";
-$x = json_decode(file_get_contents($url),1);
-$total = $x["totalResults"];
-ul("items","id","title","url");
+$url = "/playlist?url=$link&nextPageToken=";
+ul($url);
 /*
 $x = $x["items"];$no=1;
 foreach($x as $i){
