@@ -13,7 +13,7 @@ function donl($pat){
 $pot = "https://api.youtubemultidownloader.com/video?url=$pat";
 $i = json_decode(file_get_contents($pot),1);
 $thum = $i["thumbnails"];
-$idx = str_replace("default","hqdefault",$pat);
+$idx = str_replace("default","hqdefault",$thum);
 $img = "<center><img src='$idx' /> </center>";
 $title = $i["title"];
 echo "<br><p>$img <br>
@@ -35,18 +35,22 @@ if(isset($_POST["go"])){
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="YouTube Download" content="Irkop">
-    <title></title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>YouTube Download</title>
   </head>
   <body>
-    
+       <div class="con">
+       <div class="box">
+      <p> Download Video YouTube Singel / Playlist </p>
     <form action="" method="post" >
-      <input type="url" name="url" value="" />
+      <input type="url" name="url" placeholder="Input Url YouTube" />
       <input type="submit" name="go" value=" Download " />
     </form>
-    
+       </div></div>
+       
 <?php
 if($m == 1){
+echo '<div class="con"><div class="box">';
 $link = $_POST["url"];
 $l = array("youtube.com","youtu.be","playlist");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
@@ -58,9 +62,8 @@ donl($link);
 }
 }else{
 echo "URL INVALID <br>";
-}
-  
-}
+}}
+echo "</div></div>";
 ?>
     
   </body>
