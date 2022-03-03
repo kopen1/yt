@@ -10,15 +10,16 @@ $total = $x["totalResults"];
 $x = $x["items"];$no=1;
 foreach($x as $i){
 $id = $i["id"];
+$img = "<img src='https://i.ytimg.com/vi/$id/hqdefault.jpg' /> ";
 $title = $i["title"];
 $url = $i["url"];
 $pot = "https://api.youtubemultidownloader.com/video?url=$url";
-echo "
-$no | $title <br> $url <br> ";
+echo "<p>$img <br>
+$no | $title <br> $url <br> </p>";
 $no++;
 }
 $x = json_decode(file_get_contents($pot),1);
-printf($x);
+print_r($x);
 
 }else{
   $msg = 1; 
