@@ -22,7 +22,7 @@ foreach($x as $i){
 $format = $i["height"];
 $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
-$dl = "<a href='$urldl' > $format </a>";
+$dl = "<a href='$urldl' > {$format}P </a>";
 echo "$dl | ";
 }}
 if(isset($_POST["go"])){
