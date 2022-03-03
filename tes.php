@@ -9,34 +9,31 @@ $idx = $i["id"];
 $img = "<img src='https://i.ytimg.com/vi/$idx/hqdefault.jpg' /> ";
 $title = $i["title"];
 $link = $i["url"];
+$url = donl($link);
 echo "<p>$img <br>
 $no | $title <br> $url <br> </p>";
 $no++;
+}}
+
+function donl($pat){
+$pot = "https://api.youtubemultidownloader.com/video?url=$pat";
+$x = json_decode(file_get_contents($pot),1);
+$x = $x["format"];
+foreach($x as $i){
+$format = $i["height"];
+$urldl = $i["url"];
+if($urldl == null) $urldl = $i["manifestUrl"];;
+$dl = "<a href='$urldl' > Download </a>";
+echo "
+$format | $dl <br> ";
 }}
 
 if(isset($_POST["go"])){
 $link = $_POST["url"];
 $l = array("youtube.com","youtu.be");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
-$url = "/playlist?url=$link&nextPageToken=";
+$url = "playlist?url=$link&nextPageToken=";
 ul($url);
-/*
-$x = $x["items"];$no=1;
-foreach($x as $i){
-$id = $i["id"];
-$img = "<img src='https://i.ytimg.com/vi/$id/hqdefault.jpg' /> ";
-$title = $i["title"];
-$url = $i["url"];
-$pot = "https://api.youtubemultidownloader.com/video?url=$url";
-echo "<p>$img <br>
-$no | $title <br> $url <br> </p>";
-$no++;
-}
-$x = json_decode(file_get_contents($pot),1);
-$x = $x["format"];
-foreach($x as $i){
-$url = $i["height"];
-*/
 }else{
   $msg = 1; 
 }}
