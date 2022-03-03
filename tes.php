@@ -16,16 +16,19 @@ $idx = str_replace("default","hqdefault",$thum);
 $img = "<center><img src='$idx' /> </center>";
 $title = $i["title"];
 echo "<br><p>$img <br>
-$title <br> Download : ";
+$title <br> Download : 
+<ul> ";
 $x = $i["format"];
 foreach($x as $i){
 $format = $i["height"];
 $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
 $dl = "<a href='$urldl' > {$format}P </a>";
-echo "$dl | ";
+echo "<li> $dl </li>";
 if($format == 144){ break; }
-}}
+}
+echo "</ul>";
+}
 if(isset($_POST["go"])){
   $m = 1;
 }
