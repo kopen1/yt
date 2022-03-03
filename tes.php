@@ -10,6 +10,8 @@ donl($link);
 $no++;
 }}
 function donl($pat){
+  global $no;
+if($no == ""){ $no = 1;}
 $pot = "https://api.youtubemultidownloader.com/video?url=$pat";
 $i = json_decode(file_get_contents($pot),1);
 $thum = $i["thumbnails"];
