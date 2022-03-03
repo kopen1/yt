@@ -10,7 +10,7 @@
     
     <form action="dl.php" method="post" >
       <input type="url" name="url" value="" />
-      <input type="button" name="go" id="go" value=" Download " />
+      <input type="submit" name="go" id="go" value=" Download " />
       
     </form>
     
