@@ -6,6 +6,7 @@ $l = array("youtube.com","youtu.be");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
 $url = "https://api.youtubemultidownloader.com/playlist?url=$link&nextPageToken=";
 $x = json_decode(file_get_contents($url),1);
+echo $x["totalResults"];
 print_r($x);
 }else{
   $msg = 1; 
