@@ -6,8 +6,20 @@ $l = array("youtube.com","youtu.be");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
 $url = "https://api.youtubemultidownloader.com/playlist?url=$link&nextPageToken=";
 $x = json_decode(file_get_contents($url),1);
-echo $x["totalResults"];
-print_r($x);
+$total = $x["totalResults"];
+$x = $x["items"];$no=1;
+foreach($x as $i){
+$id = $i["id"];
+$title = $i["title"];
+$url = $i["url"];
+$pot = "https://api.youtubemultidownloader.com/video?url=$url";
+echo "
+$no | $title <br> $url <br> ";
+$no++;
+}
+$x = json_decode(file_get_contents($pot),1);
+printf($x);
+
 }else{
   $msg = 1; 
 }}
