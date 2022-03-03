@@ -5,20 +5,20 @@ $home = "https://api.youtubemultidownloader.com/$pat";
 $x = json_decode(file_get_contents($home),1);
 $x = $x["items"];$no=1;
 foreach ($x as $i){
-$idx = $i["id"];
-$img = "<center><img src='https://i.ytimg.com/vi/$idx/hqdefault.jpg' /> </center>";
-$title = $i["title"];
 $link = $i["url"];
-echo "<p>$img <br>
-[$no] $title <br>";
 donl($link);
-echo "<br>";
 $no++;
 }}
 function donl($pat){
 $pot = "https://api.youtubemultidownloader.com/video?url=$pat";
-$x = json_decode(file_get_contents($pot),1);
-$x = $x["format"];
+$i = json_decode(file_get_contents($pot),1);
+$thum = $i["thumbnails"];
+$idx = str_replace("default","hqdefault",$pat);
+$img = "<center><img src='$idx' /> </center>";
+$title = $i["title"];
+echo "<br><p>$img <br>
+[$no] $title <br>";
+$x = $i["format"];
 foreach($x as $i){
 $format = $i["height"];
 $urldl = $i["url"];
