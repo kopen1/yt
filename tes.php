@@ -26,7 +26,9 @@ if($urldl == null){ $urldl = $i["manifestUrl"]; }
 $dl = "<a href='$urldl' > $format </a>";
 echo "$dl | ";
 }}
-
+if(isset($_POST["go"])){
+  $m = 1;
+}
 
 ?>
 <!DOCTYPE html>
@@ -43,8 +45,8 @@ echo "$dl | ";
       <input type="submit" name="go" value=" Download " />
     </form>
     
-  <?php
-if(isset($_POST["go"])){
+<?php
+if($m == 1){
 $link = $_POST["url"];
 $l = array("youtube.com","youtu.be","playlist");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
@@ -56,7 +58,9 @@ donl($link);
 }
 }else{
 echo "URL INVALID <br>";
-}}
+}
+  
+}
 ?>
     
   </body>
