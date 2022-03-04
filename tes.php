@@ -40,7 +40,7 @@ if(isset($_POST["go"])){
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Youtube Multi Downloader">
-<link rel="icon" href="https://youtubemultidownloader.net/favicon.ico">
+<link rel="icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/youtube_logo_icon_168737.png">
 <meta name="title" content="Youtube Multi Downloader Online Free">
 <meta name="description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3">
 <meta name="keywords" content="Download youtube, multi download, youtube multi downloader">
@@ -71,12 +71,10 @@ echo '<div class="con"><div class="box">';
 $link = $_POST["url"];
 $l = array("youtube.com","youtu.be","watch");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
-if(strpos($link,$l[2]) != null){
-donl($link);
-}else{
- //(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4]) != null | strpos($link,$l[5]) != null ){
 $url = "playlist?url=$link&nextPageToken=";
 ul($url);
+}else{
+donl($link);
 }
 
 
