@@ -92,6 +92,19 @@ echo "URL INVALID <br>";
 }}
 echo "</div></div>";
 ?>
+ 
+ <footer>
+  <p>
+ <a href="Privacy_Policy.html" target="_blank" >Privacy Policy</a>
+ <a href="terms.html" target="_blank" >Terms & Conditions</a>
+ <a href="Disclaimer.html" target="_blank" > Disclaimer </a>
+ <a href="https://t.me/IRK0P/" target="_blank"> CONTACT </a>
+ </p>
+  <p><a href="/" >YouTube Multi Downloader</a></p>
+  <p>Irkop ©2022</p>
+</footer>
+ 
+ 
     
   </body>
 </html>
