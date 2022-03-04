@@ -17,7 +17,7 @@ $img = "<center><img src='$idx' /> </center>";
 $title = $i["title"];
 echo "<br><p>$img <br>
 $title <br> Download : 
-<ul> ";
+<ul class=\"menu\"> ";
 $x = $i["format"];
 foreach($x as $i){
 $format = $i["height"];
