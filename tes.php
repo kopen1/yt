@@ -52,7 +52,13 @@ if(isset($_POST["go"])){
   <body>
        <div class="con">
        <div class="box">
-      <p> Download Video YouTube Singel / Playlist </p>
+      <h2> Download Video YouTube </h2>
+      <p> Link Singel,Playlist and Channel.
+      Example Link/URL :
+      Singel : https://www.youtube.com/watch?v=pqkq.....
+      Playlist : https://youtube.com/playlist?list=PLq.....
+      Channel : https://youtube.com/c/....| https://youtube.com/user/.... | https://youtube.com/channel/....
+      </p>
     <form action="" method="post" >
       <input type="url" name="url" placeholder="Input Url YouTube" />
       <input type="submit" name="go" value=" Download " />
