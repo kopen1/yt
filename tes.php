@@ -23,7 +23,7 @@ foreach($x as $i){
 $format = $i["height"];
 $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
-$dl = "<a class='url' href='$urldl' width='100%' > {$format}P </a>";
+$dl = "<a class='url' href='$urldl' width='auto' > {$format}P </a>";
 echo "$dl";
 if($format == 144){ break; }
 }
