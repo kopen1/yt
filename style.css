@@ -14,6 +14,7 @@ body {
   background: cyan;
   border : 3px solid red;
   border-radius: 20px;
+ font-size: 21px;
 }
 
 
@@ -34,10 +35,10 @@ list-style: none;
 }
 .url {
 background: gray;
-border: 7px solid black;
+border: 1.2px solid black;
 border-radius: 12px;
 }
 a{
   text-decoration: none;
-  color: green;
+  color: white;
 }
