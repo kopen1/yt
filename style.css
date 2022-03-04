@@ -24,8 +24,9 @@ form input {
 
 .menu {
     height: auto;
-    max-height: 100px;
+    max-height: 200px;
     overflow-x: hidden;
+    background: #b4b4b4;
 }
 .menu ul li,.menu ul li a{
   text-decoration: none;
