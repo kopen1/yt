@@ -51,14 +51,14 @@ if(isset($_POST["go"])){
   </head>
   <body>
        <div class="con">
-       <div class="box">
-      <h2> Download Video YouTube </h2>
+      <h2> Youtube Multi Downloader Online </h2>
       <p> Link Singel,Playlist and Channel.
       Example Link/URL :
       Singel : https://www.youtube.com/watch?v=pqkq.....
       Playlist : https://youtube.com/playlist?list=PLq.....
       Channel : https://youtube.com/c/....| https://youtube.com/user/.... | https://youtube.com/channel/....
       </p>
+    <div class="box">
     <form action="" method="post" >
       <input type="url" name="url" placeholder="Input Url YouTube" />
       <input type="submit" name="go" value=" Download " />
