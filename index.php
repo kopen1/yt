@@ -86,6 +86,7 @@ if(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4
 $url = "playlist?url=$link&nextPageToken=";
 ul($url);
 }else{
+echo $link;
 donl($link);}
 }else{
 echo "URL INVALID <br>";
