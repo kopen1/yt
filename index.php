@@ -51,16 +51,18 @@ if(isset($_POST["go"])){
   <body>
     <div class="con">
       <a href="/" ><h2 class="tc">Youtube Multi Downloader</h2></a>
-      <p> Link Singel,Playlist and Channel.<br>
-      Example Link/URL : <br>
+      <p>Download Video YouTube Via Link Singel,Playlist and Channel.<br>
+      Example Link/URL : <br></p>
+      <p>
       Singel : <br>
       <bold>
       https://www.youtube.com/watch?v=abc123 <br>
-      </bold>
+      </bold><br /></p>
+      <p>
       Playlist : <br />
       <bold>
       https://www.youtube.com/watch?v=abc123 <br>
-      </bold>
+      </bold><br />
       Channel : <br><bold>
       https://youtube.com/c/name_channel<br>
       https://youtube.com/user/name_channel<br>
