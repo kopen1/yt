@@ -29,7 +29,6 @@ p {
 
 form input {
   height: 25px;
-  width: 80%;
   border : 1px solid red;
   border-radius: 20px;
 }
