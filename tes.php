@@ -52,11 +52,11 @@ if(isset($_POST["go"])){
   <body>
        <div class="con">
       <h2> Youtube Multi Downloader Online </h2>
-      <p> Link Singel,Playlist and Channel.
-      Example Link/URL :
-      Singel : https://www.youtube.com/watch?v=pqkq.....
-      Playlist : https://youtube.com/playlist?list=PLq.....
-      Channel : https://youtube.com/c/....| https://youtube.com/user/.... | https://youtube.com/channel/....
+      <p> Link Singel,Playlist and Channel.<br>
+      Example Link/URL : <br>
+      Singel : https://www.youtube.com/watch?v=pqkq..... <br>
+      Playlist : https://youtube.com/playlist?list=PLq..... <br>
+      Channel : https://youtube.com/c/....| https://youtube.com/user/.... | https://youtube.com/channel/.... <br>
       </p>
     <div class="box">
     <form action="" method="post" >
