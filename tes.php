@@ -13,7 +13,7 @@ $pot = "https://api.youtubemultidownloader.com/video?url=$pat";
 $i = json_decode(file_get_contents($pot),1);
 $thum = $i["thumbnails"];
 $idx = str_replace("default","hqdefault",$thum);
-$img = "<center><img src='$idx' /> </center>";
+$img = "<center><img src='$idx' alt='IRKOP' /> </center>";
 $title = $i["title"];
 echo "<br><p>$img <br>
 $title <br> Download : 
