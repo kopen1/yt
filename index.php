@@ -27,9 +27,25 @@ echo "$dl ";
 if($format == 144){ break; }
 }
 }
+function ads(){
+  echo "
+  <script type=\"text/javascript\">
+	atOptions = {
+		'key' : 'c1d5f82105b2c6ab8fa71fe7f430d631',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type=\"text/javascript\" src=\"http' + (location.protocol === 'https:' ? 's' : '') + '://navigablepiercing.com/c1d5f82105b2c6ab8fa71fe7f430d631/invoke.js\"></scr' + 'ipt>');
+</script>
+";
+}
+
 if(isset($_POST["go"])){
   $m = 1;
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -77,6 +93,7 @@ if(isset($_POST["go"])){
        </div></div>
        
 <?php
+ads();
 if($m == 1){
 echo '<div class="con"><div class="box">';
 $link = $_POST["url"];
