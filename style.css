@@ -44,10 +44,10 @@ ul li{
 list-style: none;
 }
 .url {
-background: gray;
+background: green;
 border: 1.2px solid black;
 border-radius: 8px;
-margin: 3px 3px;
+margin: 5px;
 }
 a{
   text-decoration: none;
