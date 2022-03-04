@@ -14,7 +14,7 @@ $i = json_decode(file_get_contents($pot),1);
 $thum = $i["thumbnails"];
 $idx = str_replace("default","hqdefault",$thum);
 $title = $i["title"];
-$img = "<center><img src='$idx' alt='IRKOP - $title' /> </center>";
+$img = "<center><img src='$idx' width='100%' alt='IRKOP - $title' /> </center>";
 echo "<br><p>$img <br>
 $title <br> Download : 
 ";
