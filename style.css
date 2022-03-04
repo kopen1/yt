@@ -21,3 +21,9 @@ form input {
   border : 1px solid red;
   border-radius: 20px;
 }
+
+.menu {
+    height: auto;
+    max-height: 50px;
+    overflow-x: hidden;
+}
