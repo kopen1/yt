@@ -49,13 +49,23 @@ if(isset($_POST["go"])){
 <title>Youtube Multi Downloader</title>
   </head>
   <body>
-       <div class="con">
+    <div class="con">
       <a href="/" ><h2 class="tc">Youtube Multi Downloader</h2></a>
       <p> Link Singel,Playlist and Channel.<br>
       Example Link/URL : <br>
-      Singel : https://www.youtube.com/watch?v=pqkq..... <br>
-      Playlist : https://youtube.com/playlist?list=PLq..... <br>
-      Channel : https://youtube.com/c/....| https://youtube.com/user/.... | https://youtube.com/channel/.... <br>
+      Singel : <br>
+      <bold>
+      https://www.youtube.com/watch?v=abc123 <br>
+      </bold>
+      Playlist : <br />
+      <bold>
+      https://www.youtube.com/watch?v=abc123 <br>
+      </bold>
+      Channel : <br><bold>
+      https://youtube.com/c/name_channel<br>
+      https://youtube.com/user/name_channel<br>
+      https://youtube.com/channel/abc123 <br>
+      </bold>
       </p>
     <div class="box">
     <form action="" method="post" >
@@ -74,11 +84,7 @@ if(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4
 $url = "playlist?url=$link&nextPageToken=";
 ul($url);
 }else{
-donl($link);
-}
-
-
-
+donl($link);}
 }else{
 echo "URL INVALID <br>";
 }}
