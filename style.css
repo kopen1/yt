@@ -66,6 +66,7 @@ footer {
   margin: 10px;
 }
 footer a {
+  font-family: Sans-Serif,Comic Sans MS;
   font-size: 15px;
   color: green;
   text-decoration: none;
