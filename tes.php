@@ -37,9 +37,20 @@ if(isset($_POST["go"])){
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-    <title>YouTube Download</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Youtube Multi Downloader">
+<link rel="icon" href="https://youtubemultidownloader.net/favicon.ico">
+<meta name="title" content="Youtube Multi Downloader Online Free">
+<meta name="description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3">
+<meta name="keywords" content="Download youtube, multi download, youtube multi downloader">
+<meta property="og:title" content="Youtube Multi Downloader Online Free">
+<meta property="og:description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3">
+<meta property="og:url" content="http://youtubemultidownloader.com">
+<meta property="og:site_name" content="Youtube Multi Downloader">
+<link rel="canonical" href="https://youtubemultidownloader.com/">
+<title>Youtube Multi Downloader Online Free</title>
   </head>
   <body>
        <div class="con">
