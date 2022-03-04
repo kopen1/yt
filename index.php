@@ -39,7 +39,7 @@ if(isset($_POST["go"])){
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Youtube Multi Downloader">
-<link rel="icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/youtube_logo_icon_168737.png">
+<link rel="icon" href="https://icon-library.com/images/youtube-icon-download-for-desktop/youtube-icon-download-for-desktop-12.jpg">
 <meta name="title" content="Youtube Multi Downloader">
 <meta name="description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3">
 <meta name="keywords" content="Download youtube, multi download, youtube multi downloader">
@@ -50,7 +50,7 @@ if(isset($_POST["go"])){
   </head>
   <body>
        <div class="con">
-      <a href="/" ><h2 class="tc"> Youtube Multi Downloader Online </h2></a>
+      <a href="/" ><h2 class="tc">Youtube Multi Downloader</h2></a>
       <p> Link Singel,Playlist and Channel.<br>
       Example Link/URL : <br>
       Singel : https://www.youtube.com/watch?v=pqkq..... <br>
