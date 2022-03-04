@@ -16,6 +16,10 @@ body {
   border-radius: 20px;
 }
 
+.tc {
+  text-align: center;
+}
+
 h2 {
   color: cyan;
 }
