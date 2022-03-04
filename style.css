@@ -27,3 +27,8 @@ form input {
     max-height: 50px;
     overflow-x: hidden;
 }
+.menu li,li a{
+  text-decoration: none;
+  list-style: none;
+  color: green;
+}
