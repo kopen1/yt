@@ -23,11 +23,10 @@ foreach($x as $i){
 $format = $i["height"];
 $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
-$dl = "<a class='url' href='$urldl' > {$format}P </a>";
+$dl = "<a class='url' href='$urldl' width='100%' > {$format}P </a>";
 echo "$dl";
 if($format == 144){ break; }
 }
-//echo "</ul>";
 }
 if(isset($_POST["go"])){
   $m = 1;
@@ -47,9 +46,7 @@ if(isset($_POST["go"])){
 <meta name="keywords" content="Download youtube, multi download, youtube multi downloader">
 <meta property="og:title" content="Youtube Multi Downloader Online Free">
 <meta property="og:description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3">
-<meta property="og:url" content="http://youtubemultidownloader.com">
 <meta property="og:site_name" content="Youtube Multi Downloader">
-<link rel="canonical" href="https://youtubemultidownloader.com/">
 <title>Youtube Multi Downloader Online Free</title>
   </head>
   <body>
