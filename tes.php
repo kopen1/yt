@@ -51,7 +51,7 @@ if(isset($_POST["go"])){
   </head>
   <body>
        <div class="con">
-      <h2 class="tc"> Youtube Multi Downloader Online </h2>
+      <a href="/" ><h2 class="tc"> Youtube Multi Downloader Online </h2></a>
       <p> Link Singel,Playlist and Channel.<br>
       Example Link/URL : <br>
       Singel : https://www.youtube.com/watch?v=pqkq..... <br>
