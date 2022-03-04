@@ -107,6 +107,7 @@ donl($link);}
 }else{
 echo "URL INVALID <br>";
 }}
+ads();
 echo "</div></div>";
 ?>
  
