@@ -24,10 +24,10 @@ form input {
 
 .menu {
     height: auto;
-    max-height: 50px;
+    max-height: 100px;
     overflow-x: hidden;
 }
-.menu li,li a{
+.menu ul li,.menu ul li a{
   text-decoration: none;
   list-style: none;
   color: green;
