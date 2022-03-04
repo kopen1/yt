@@ -57,7 +57,7 @@ echo '<div class="con"><div class="box">';
 $link = $_POST["url"];
 $l = array("youtube.com","youtu.be","watch");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
-if($strpos($link,$l[2]) != null){
+if(strpos($link,$l[2]) != null){
 donl($link);
 }else{
  //(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4]) != null | strpos($link,$l[5]) != null ){
