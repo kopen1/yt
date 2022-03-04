@@ -17,17 +17,17 @@ $title = $i["title"];
 $img = "<center><img src='$idx' alt='IRKOP - $title' /> </center>";
 echo "<br><p>$img <br>
 $title <br> Download : 
-<ul class='menu'> ";
+";
 $x = $i["format"];
 foreach($x as $i){
 $format = $i["height"];
 $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
-$dl = "<a href='$urldl' > {$format}P </a>";
-echo "<li> $dl </li>";
+$dl = "<a class='url' href='$urldl' > {$format}P </a>";
+echo "$dl";
 if($format == 144){ break; }
 }
-echo "</ul>";
+//echo "</ul>";
 }
 if(isset($_POST["go"])){
   $m = 1;
