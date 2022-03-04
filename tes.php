@@ -55,14 +55,15 @@ if(isset($_POST["go"])){
 if($m == 1){
 echo '<div class="con"><div class="box">';
 $link = $_POST["url"];
-$l = array("youtube.com","youtu.be","playlist","c","user","channel");
+$l = array("youtube.com","youtu.be","playlist","c","user","channel","watch");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
 if(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4]) != null | strpos($link,$l[5]) != null ){
 $url = "playlist?url=$link&nextPageToken=";
 ul($url);
-}else{
+}elseif($strpos($link,$l[6]) != null){
 donl($link);
-}
+}else{ 
+echo "URL INVALID <br>";}
 }else{
 echo "URL INVALID <br>";
 }}
