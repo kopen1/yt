@@ -16,8 +16,7 @@ $idx = str_replace("default","hqdefault",$thum);
 $title = $i["title"];
 $img = "<center><img src='$idx' width='100%' alt='IRKOP - $title' /> </center>";
 echo "<br><p>$img <br>
-$title <br> Download : 
-";
+$title <br>";
 $x = $i["format"];
 foreach($x as $i){
 $format = $i["height"];
@@ -41,13 +40,13 @@ if(isset($_POST["go"])){
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Youtube Multi Downloader">
 <link rel="icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/youtube_logo_icon_168737.png">
-<meta name="title" content="Youtube Multi Downloader Online Free">
+<meta name="title" content="Youtube Multi Downloader">
 <meta name="description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3">
 <meta name="keywords" content="Download youtube, multi download, youtube multi downloader">
 <meta property="og:title" content="Youtube Multi Downloader Online Free">
 <meta property="og:description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3">
 <meta property="og:site_name" content="Youtube Multi Downloader">
-<title>Youtube Multi Downloader Online Free</title>
+<title>Youtube Multi Downloader</title>
   </head>
   <body>
        <div class="con">
