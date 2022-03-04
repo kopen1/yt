@@ -11,7 +11,6 @@ body {
 
 .box {
   padding: 10px 5px;
-  background: cyan;
   border : 3px solid red;
   border-radius: 20px;
  font-size: 21px;
@@ -37,7 +36,7 @@ list-style: none;
 background: gray;
 border: 1.2px solid black;
 border-radius: 8px;
-margin: 0 2px;
+margin: 2px 2px;
 }
 a{
   text-decoration: none;
