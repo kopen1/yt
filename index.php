@@ -93,9 +93,9 @@ if(isset($_POST["go"])){
        </div></div>
        
 <?php
-ads();
 if($m == 1){
 echo '<div class="con"><div class="box">';
+ads();
 $link = $_POST["url"];
 $l = array("youtube.com","youtu.be","playlist","/c/","/channel/");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
