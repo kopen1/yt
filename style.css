@@ -36,7 +36,8 @@ list-style: none;
 .url {
 background: gray;
 border: 1.2px solid black;
-border-radius: 12px;
+border-radius: 8px;
+margin: 0 2px;
 }
 a{
   text-decoration: none;
