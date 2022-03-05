@@ -105,7 +105,7 @@ ads();
 $link = $_POST["url"];
 $nn = $_POST["pill"];
 $l = array("youtube.com","youtu.be","playlist","/c/","/channel/");
-//if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
+if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
 //if(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4]) != null){
 
 if($nn == "b"){
@@ -113,6 +113,7 @@ $url = "playlist?url=$link&nextPageToken=";
 ul($url);
 }else{
 donl($link);}
+
 }else{
 echo "URL INVALID <br>";
 }
