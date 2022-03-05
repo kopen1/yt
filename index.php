@@ -1,7 +1,7 @@
 <?php
 
 
-$url = "https://crypto.linkpath.ltd/?wp_automatic=cron&id=31";
+$url = "https://crypto.linkpath.ltd/wp-content/plugins/wp-automatic/php_cron.php?id=31";
 echo file_get_contents($url);
 exit;
 
