@@ -1,9 +1,9 @@
 <?php
 
 $url = "https://crypto.linkpath.ltd/?wp_automatic=cron&id=31";
-echo curl($url);
-
-
+$x = curl($url);
+$k = ex("New Post posted: ","plugin",1,$x);
+echo "$k";
 
 function curl($url,$data = ""){
 
