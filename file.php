@@ -3,8 +3,10 @@
 $i = 1;
 while(true){
 $url = "https://crypto.linkpath.ltd/?wp_automatic=cron&id=31";
-echo curl($url);
-sleep(1);
+$x = curl($url);
+if(strpos($x,"New Post posted") != null){
+echo "[$i] Sukses | ";
+sleep(10);
 $i++;
 }
 
