@@ -1,5 +1,10 @@
 <?php
 
+$url = "https://crypto.linkpath.ltd/?wp_automatic=cron&id=31";
+echo curl($url);
+
+
+
 function curl($url,$data = ""){
 
  $ch = curl_init();
