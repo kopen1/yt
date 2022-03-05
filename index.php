@@ -88,6 +88,7 @@ if(isset($_POST["go"])){
       </p>
     <div class="box">
     <form action="" method="post" >
+      <label for="pill">Pleas Select:</label>
       <select name="pill">
        <option value="a" >Link Single</option>
        <option value="b" >playlist</option>
