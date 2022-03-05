@@ -105,7 +105,7 @@ echo '<div class="con"><div class="box">';
 ads();
 $link = $_POST["url"];
 $nn = $_POST["pill"];
-$l = array("youtube.com","youtu.be","playlist","/c/","/channel/");
+$l = array("youtube.com","youtu.be","playlist");
 if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
 //if(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4]) != null){
 
