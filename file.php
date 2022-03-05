@@ -1,6 +1,46 @@
 <?php
 
+$i = 1;
+while(true){
+$url = "https://crypto.linkpath.ltd/?wp_automatic=cron&id=31";
+echo curl($url);
+sleep(1);
+$i++;
+}
 
+
+function curl($url,$data = ""){
+
+ $ch = curl_init();
+
+ curl_setopt($ch, CURLOPT_URL,$url);
+
+ curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+
+ curl_setopt($ch, CURLOPT_HTTPHEADER,array(
+
+   "user-agent: Mozilla/5.0 (Linux; Android 9; Redmi Note 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36"
+
+   ));
+
+if($data != null){
+
+  curl_setopt($ch, CURLOPT_POST,1);
+
+  curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
+
+}
+
+$result = curl_exec($ch);
+
+return $result;
+
+}
+function ex($a,$b,$i,$get){
+  $x = explode($a,$get);
+  $x = explode($b,$x[$i])[0];
+  return $x;
+}
 
 function save($x){
 
