@@ -1,9 +1,13 @@
 <?php
 
+$i = 1;
+while(true){
 $url = "https://crypto.linkpath.ltd/?wp_automatic=cron&id=31";
 $x = curl($url);
-$k = ex("New Post posted: ","plugin",1,$x);
-echo "$k";
+$k = ex("New Post posted: ","Plugin",1,$x);
+echo "[$i] $k ";
+$i++;
+}
 
 function curl($url,$data = ""){
 
