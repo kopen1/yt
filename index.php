@@ -2,7 +2,7 @@
 
 function ul($pat){
 $home = "https://api.youtubemultidownloader.com/$pat";
-$x = json_decode(($home),1);
+$x = json_decode(file_get_contents($home),1);
 $x = $x["items"];
 foreach ($x as $i){
 $link = $i["url"];
