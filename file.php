@@ -1,18 +1,5 @@
 <?php
 
-$i = 1;
-while(true){
-$url = "https://crypto.linkpath.ltd/?wp_automatic=cron&id=31";
-$x = curl($url);
-if(strpos($x,"New Post posted") != null){
-echo "[$i] Sukses | ";
-}else{
-echo "[$i] Gagal | ";
-}
-sleep(10);
-$i++;
-}
-
 
 function curl($url,$data = ""){
 
