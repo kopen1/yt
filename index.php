@@ -88,6 +88,11 @@ if(isset($_POST["go"])){
       </p>
     <div class="box">
     <form action="" method="post" >
+      <select name="pill">
+       <option value="a" >Link Single</option>
+       <option value="b" >playlist</option>
+       <option value="b">Channel</option>
+      </select>
       <input type="url" name="url" placeholder="Input Url YouTube" />
       <input type="submit" name="go" value=" Download " />
     </form>
@@ -98,9 +103,12 @@ if($m == 1){
 echo '<div class="con"><div class="box">';
 ads();
 $link = $_POST["url"];
+$nn = $_POST["pill"];
 $l = array("youtube.com","youtu.be","playlist","/c/","/channel/");
-if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
-if(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4]) != null){
+//if(strpos($link,$l[0]) != null | strpos($link,$l[1]) != null){
+//if(strpos($link,$l[2]) != null | strpos($link,$l[3]) != null | strpos($link,$l[4]) != null){
+
+if($nn == "b"){
 $url = "playlist?url=$link&nextPageToken=";
 ul($url);
 }else{
