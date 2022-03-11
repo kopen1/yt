@@ -15,7 +15,8 @@ $thum = $i["thumbnails"];
 $idx = str_replace("default","hqdefault",$thum);
 $title = $i["title"];
 $img = "<center><img src='$idx' width='100%' alt='IRKOP - $title' /> </center>";
-echo "<br><p>$img <br>
+echo "<div class=\"box\">
+<br><p>$img <br>
 $title <br>";
 $x = $i["format"];
 foreach($x as $i){
@@ -23,7 +24,7 @@ $format = $i["height"];
 $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
 $dl = "<a class='url' href='$urldl' > {$format}P </a>";
-echo "$dl ";
+echo "$dl </div>";
 if($format == 144){ break; }
 }
 }
@@ -95,7 +96,7 @@ if(isset($_POST["go"])){
        
 <?php
 if($m == 1){
-echo '<div class="con"><div class="box">';
+echo '<div class="con">';
 ads();
 $link = $_POST["url"];
 $nn = $_POST["pill"];
@@ -111,7 +112,7 @@ donl($link);}
 echo "URL INVALID <br>";
 }
 ads();
-echo "</div></div>";
+echo "</div>";
 }
 ?>
  
