@@ -6,7 +6,8 @@ $x = json_decode(file_get_contents($home),1);
 $x = $x["items"];
 foreach ($x as $i){
 $link = $i["url"];
-donl($link);
+echo '<div class="box">'.
+donl($link).'</div>';
 }}
 function donl($pat){
 $pot = "https://api.youtubemultidownloader.com/video?url=$pat";
@@ -14,8 +15,8 @@ $i = json_decode(file_get_contents($pot),1);
 $thum = $i["thumbnails"];
 $idx = str_replace("default","hqdefault",$thum);
 $title = $i["title"];
-$img = "<center><img src='$idx' alt='IRKOP - $title' /> </center>";
-echo "<div class='box'><br><p>$img <br>
+$img = "<center><img src='$idx' width='50%'alt='IRKOP - $title' /> </center>";
+echo "<br><p>$img <br>
 $title <br>";
 $x = $i["format"];
 foreach($x as $i){
@@ -26,7 +27,6 @@ $dl = "<a class='url' href='$urldl' > {$format}P </a>";
 echo $dl;
 if($format == 144){ break; }
 }
-  echo "</div>";
 }
 function ads(){
   echo "
