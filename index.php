@@ -23,7 +23,7 @@ $format = $i["height"];
 $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
 $dl = "<a class='url' href='$urldl' > {$format}P </a>";
-echo "$dl </div>";
+echo $dl;
 if($format == 144){ break; }
 }
   echo "</div>";
