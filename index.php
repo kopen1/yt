@@ -20,8 +20,8 @@ echo "<br><p>$img <br>
 $title <br>";
 $x = $i["format"];
 foreach($x as $i){
-if($format == 720){ 
 $format = $i["height"];
+if($format == 720){ 
 $urldl = $i["url"];
 if($urldl == null){ $urldl = $i["manifestUrl"]; }
 $dl = "<a class='url' href='$urldl' > {$format}P </a>";
