@@ -18,7 +18,7 @@ $title = $i["title"];
 $img = "<center><img src='$idx' width='50%'alt='IRKOP - $title' /> </center>";
 echo "<br><p>$img <br>
 $title <br>";
-$x = $i["format"];
+$x = $i["format"]["720"];
 foreach($x as $i){
 $format = $i["height"];
 $urldl = $i["url"];
